@@ -34,7 +34,7 @@ class ListNode:
 
 
 """Our doubly-linked list class. It holds references to
-the list's head and tail nodes."""
+the list's head and tail nodes. """
 class DoublyLinkedList:
     def __init__(self, node=None):
         self.head = node
