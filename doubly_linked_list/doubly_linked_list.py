@@ -142,4 +142,19 @@ class DoublyLinkedList:
         
     """Returns the highest value currently in the list"""
     def get_max(self):
-        pass
+        if self.head == self.tail:
+            return self.head.value
+
+        node = self.head
+        i = 0
+        value = 0
+
+        while i < self.length:
+            i += 1
+            if value < node.value:
+                value = node.value
+            node = node.next
+
+        return value
+
+
