@@ -28,4 +28,4 @@ class Stack:
 
     def pop(self):
         if self.storage.length > 0:
-            return self.storage.remove_from_head
+            return self.storage.remove_from_head()
