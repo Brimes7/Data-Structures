@@ -81,6 +81,7 @@ class DoublyLinkedList:
     def remove_from_head(self):
         if not self.head:
             return
+        #copies so that node does not lose value
         value = self.head.value
         if self.head == self.tail:
             self.head = self.tail = None
@@ -89,9 +90,9 @@ class DoublyLinkedList:
             node_begone = self.head
             self.head = self.head.next
             self.delete(node_begone)
-        # value = self.head.value
-        # # runs the actual delete method
-        # self.delete(self.head)
+#         value = self.head.value
+#         # runs the actual delete method
+#         self.delete(self.head)
         return value
 
     """Wraps the given value in a ListNode and inserts it 
