@@ -9,7 +9,6 @@ This part of the project comprises two days:
 2. Implement the `in_order_print`, `bft_print`, and `dft_print` methods
    on the BSTNode class.
 """
-from dumb_queue.doubly_linked_list import DoublyLinkedList
 from dumb_queue.dumb_queue import Queue
 from stack.stack import Stack
 
