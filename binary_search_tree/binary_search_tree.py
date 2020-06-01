@@ -37,6 +37,7 @@ class BSTNode:
 
     # Return True if the tree contains the value
     # False if it does not
+    #THIS PASSES
     def contains(self, target):
         if target == self.value:
             return True
@@ -54,6 +55,7 @@ class BSTNode:
                 return False
 
     # Return the maximum value found in the tree
+    #THIS PASSES
     def get_max(self):
         current_node = self
         while current_node.right is not None:
@@ -62,6 +64,7 @@ class BSTNode:
         return current_node.value
 
     # Call the function `fn` on the value of each node
+    #This PASSES
     def for_each(self, fn):
         fn(self.value)
 
@@ -74,11 +77,10 @@ class BSTNode:
 
     # Print all the values in order from low to high
     # Hint:  Use a recursive, depth first traversal
+    #This passes
     def in_order_print(self, node):
         if node.left is not None:
             node.in_order_print(node.left)
-
-        print(node.value)
 
         if node.right is not None:
             node.in_order_print(node.right)
@@ -96,7 +98,6 @@ class BSTNode:
                 queue.enqueue(node.left)
             if node.right:
                 queue.enqueue(node.right)
-            print(node.value)
 
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
