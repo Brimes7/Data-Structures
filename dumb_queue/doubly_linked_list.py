@@ -68,6 +68,8 @@ class DoublyLinkedList:
     current head's next node the new head of the List.
     Returns the value of the removed Node."""
     def remove_from_head(self):
+        if not self.head:
+            return
         value = self.head.value
         #runs the actual delete method
         self.delete(self.head)

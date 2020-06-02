@@ -30,4 +30,4 @@ class Queue:
         return self.storage.add_to_tail(value)
 
     def dequeue(self):
-        return self.storage.delete(self.storage.head)
+        return self.storage.remove_from_head()

@@ -82,8 +82,11 @@ class BSTNode:
         if node.left is not None:
             node.in_order_print(node.left)
 
+        print(node.value)
+
         if node.right is not None:
             node.in_order_print(node.right)
+
 
     # Print the value of every node, starting with the given node,
     # in an iterative breadth first traversal
@@ -94,6 +97,7 @@ class BSTNode:
         while len(queue) != 0:
             # dequeue has the power to add and remove
             node = queue.dequeue()
+            print(node.value)
             if node.left:
                 queue.enqueue(node.left)
             if node.right:
